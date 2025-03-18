@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Diện Tích và Chu Vi</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tính Diện Tích & Chu Vi</h1>
+        <div class="form-group">
+            <label for="shape">Chọn loại hình:</label>
+            <select id="shape" onchange="showInputs()">
+                <option value="none">-- Chọn --</option>
+                <option value="rectangle">Hình chữ nhật</option>
+                <option value="circle">Hình tròn</option>
+                <option value="triangle">Tam giác</option>
+            </select>
+        </div>
+        <div id="inputs"></div>
+        <button onclick="calculate()">Tính toán</button>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
